@@ -1,0 +1,20 @@
+.ui.cards > .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0.875em 0.5em;
+    float: none;
+    width: 100% !important;
+}
+
+@media (min-width: 992px) {
+    .modal-dialog {
+      max-width: 80%;
+
+    }
+  }
+
+  span.col-md-12 {
+    
+    padding: 0px 9px !important;
+}
