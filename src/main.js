@@ -110,19 +110,10 @@ root.appendChild(create);
             .then((docRef) => {
                     db.collection("posts").doc(docRef.id)
                         .onSnapshot((doc)  => {
-                            // console.log("Current data: ", doc.data());
+                            console.log("Current data: ", doc.data());
 
         let updataData = document.createElement("span");
 
-        let loader = 
-    `
-                <div class="ui segment">
-                    <div class="ui active inverted dimmer">
-                        <div class="ui text loader">Loading</div>
-                    </div>
-                    <p></p>
-                </div>
-    `
             updataData.className = `col-md-12 my-2`
 
           updataData.innerHTML = 
@@ -141,12 +132,17 @@ root.appendChild(create);
                     </div>
                     <div class="extra content">
                         <span class="right floated">
-                            Jan 13, 2017
+                        <button class="ui icon primary button">
+                        <i class="edit icon"></i>
+                      </button>
+                        <button  class="ui icon red button">
+                        <i class="trash icon"></i>
+                      </button>
                         </span>
                         <span>
                             <div class="ui labeled button" tabindex="0">
                                 <div id="love" class="ui button">
-                                    <i class="heart icon"></i> Love
+                                    <i class="thumbs up icon"></i> Like
                                 </div>
                                     <a class="ui basic label">
                                     &nbsp;  ${doc.data().loves}
@@ -154,11 +150,17 @@ root.appendChild(create);
                             </div>
                             <div class="ui labeled button" tabindex="0">
                                 <div id="love" class="ui button">
-                                    <i class="rocketchat icon"></i> Comment
+                                    <i class="comment icon"></i> Comments
                                 </div>
                                     <a class="ui basic label">
-                                    &nbsp;  ${doc.data().comment.length}
+                                    &nbsp;  1128
                                     </a>
+                            </div>
+                            <div class="ui labeled button" tabindex="0">
+                                <div id="love" class="ui button">
+                                    <i class="share square icon"></i> Share
+                                </div>
+                                    
                             </div>
                         </span>
                     </div>
@@ -265,20 +267,6 @@ root.appendChild(create);
         warper.firstChild = updataData
     }
 
-    // list.insertBefore(newItem, list.childNodes[0]);
-    
-
-
-      $(document).ready(function() {
-        function myFunction(id) {
-            if (id) {
-                console.log(id);
-            }
-            
-            
-          }
-      
-      });
 }
 
 
