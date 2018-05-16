@@ -26,7 +26,10 @@ root.className = `container`;
 let container = document.createElement("div");
 container.className = `jumbotron text-center`;
 let title = document.createElement("h1");
-title.innerHTML = 'Welcome To Post Planet'
+title.innerHTML = `Welcome To Post Planet
+    <br/>
+    <a href="https://github.com/fsmdeveloper/post-planet" target="_blank">Source</a>
+`
 container.appendChild(title);
 root.appendChild(container);
 

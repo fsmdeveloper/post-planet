@@ -1,0 +1,38 @@
+[debug] [2018-05-16T18:37:17.656Z] ----------------------------------------------------------------------
+[debug] [2018-05-16T18:37:17.659Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\SHOHA\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-05-16T18:37:17.660Z] CLI Version:   3.18.4
+[debug] [2018-05-16T18:37:17.660Z] Platform:      win32
+[debug] [2018-05-16T18:37:17.660Z] Node Version:  v8.11.1
+[debug] [2018-05-16T18:37:17.660Z] Time:          Thu May 17 2018 00:37:17 GMT+0600 (Bangladesh Standard Time)
+[debug] [2018-05-16T18:37:17.660Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-05-16T18:37:17.677Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-05-16T18:37:17.679Z] > authorizing via signed-in user
+[debug] [2018-05-16T18:37:17.682Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/fsmcoder-83e38  
+  
+ Thu May 17 2018 00:37:17 GMT+0600 (Bangladesh Standard Time)
+[debug] [2018-05-16T18:37:19.379Z] <<< HTTP RESPONSE 200
+[debug] [2018-05-16T18:37:19.381Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/fsmcoder-83e38/tokens  
+  
+ Thu May 17 2018 00:37:19 GMT+0600 (Bangladesh Standard Time)
+[debug] [2018-05-16T18:37:20.447Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'fsmcoder-83e38'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing . directory for upload...
+[debug] [2018-05-16T18:37:22.221Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/fsmcoder-83e38/uploads/-LCeE_6bcVWkgq9le-1R?fileCount=59&message=  
+  
+ Thu May 17 2018 00:37:22 GMT+0600 (Bangladesh Standard Time)
+[debug] [2018-05-16T18:37:24.767Z] <<< HTTP RESPONSE 200
+[debug] [2018-05-16T18:37:24.768Z] [hosting] .tgz uploaded successfully, waiting for extraction
+[info] +  hosting: 59 files uploaded successfully
+[debug] [2018-05-16T18:37:25.694Z] [hosting] deploy completed after 3691ms
+[debug] [2018-05-16T18:37:26.319Z] >>> HTTP REQUEST POST https://deploy.firebase.com/v1/projects/fsmcoder-83e38/releases  
+ { hosting: 
+   { public: '.',
+     ignore: [ 'firebase.json', '**/.*', '**/node_modules/**' ],
+     version: '-LCeE_6bcVWkgq9le-1R',
+     prefix: '-LCeE_6bcVWkgq9le-1R/',
+     manifest: [] } } 
+ Thu May 17 2018 00:37:26 GMT+0600 (Bangladesh Standard Time)
